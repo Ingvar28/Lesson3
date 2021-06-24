@@ -5,30 +5,31 @@ import java.util.Scanner;
 
 public class LessonTasks {
 
-    public static void task1(int[] array) {
+    public static String task1(int[] array) {
 
         boolean state = true;
 
         for (int i = 0; i < array.length - 1; i++) {
             int index = i;
+            System.out.println("i: " + array[i]);
+            System.out.println("i+1: " + array[i+1]);
 
-
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[j] < array[index]) {
-                    state = false;
-                    break;
-                } else {
-                    continue;
-                }
-
+            if (array[i] > array[i+1]) {
+                state = false;
+                break;
             }
 
-//            if (state = true) {
-//                System.out.println("OK");
-//            } else {
-//                System.out.println("Please, try again");
-//                break;
-//            }
+        }
+
+        System.out.println("State after FOR: " + state);
+
+
+        if (state = false) {
+            System.out.println("Please, try again");
+            return "Please, try again";
+        } else {
+            System.out.println("OK");
+            return "OK";
 
         }
 

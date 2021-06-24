@@ -22,8 +22,9 @@ public class Main {
 
         //Lesson task 1
         System.out.println("Task1:");
-//        int[] LT1array = {1, 2, 5, 4, 5, 6, 7, 8, 9, 10};
-//        LessonTasks.task1(LT1array);
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println(Arrays.toString(array));
+        LessonTasks.task1(array);
 
         //Lesson task 2
         System.out.println("Task2:");
