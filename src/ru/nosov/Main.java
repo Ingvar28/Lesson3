@@ -22,22 +22,29 @@ public class Main {
 
         //Lesson task 1
         System.out.println("Task1:");
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        System.out.println(Arrays.toString(array));
-        LessonTasks.task1(array);
+        int[] example1 = {1, 2, 6, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println(Arrays.toString(example1));
+        LessonTasks.checkArraySorting(example1);
 
         //Lesson task 2
         System.out.println("Task2:");
-//        LessonTasks.task2();
+//        LessonTasks.enterArrayFromKeyboard();
 
         //Lesson task 3
         System.out.println("Task3:");
-//        int[] LT3array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-//        System.out.println("Array original: " + Arrays.toString(LT3array));
-//        System.out.println("Mixed array: " + Arrays.toString(LessonTasks.task3(LT3array)));
+        int[] example3 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println("Array original: " + Arrays.toString(example3));
+        System.out.println("Mixed array: " + Arrays.toString(LessonTasks.reverseArrayValues(example3)) +"\n");
 
         //Lesson task 4
         System.out.println("Task4:");
+        int[] example4 = {1, 5, 2, 1, 2, 4};
+        System.out.println(LessonTasks.findUniqArrayValue(example4));
+
+        //Lesson task 5
+        System.out.println("Task5:");
+        System.out.println(LessonTasks.findFibonachi());
+
 
 
 
