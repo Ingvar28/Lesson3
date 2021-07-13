@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
+
         //Algorithm Task1
         //int[] AT1array = {1, 2, 3, 4, 2, 7, 8, 10};
         //System.out.println(Arrays.toString(AlgorithmTask.removeDigit(AT1array, 2)));
@@ -16,8 +16,8 @@ public class Main {
         //AlgorithmTask.Print(AT2array);
         //System.out.println(AlgorithmTask.PositiveIntegerSum(AT2array));
 
-        //Домашние задачи:
 
+        //Домашние задачи (в методах ккласса LessonTasks):
 
         //Lesson task 1
         System.out.println("Task1:");
@@ -37,7 +37,7 @@ public class Main {
 
         //Lesson task 4
         System.out.println("Task4:");
-        int[] example4 = {1, 2, 3, 2, 2, 4};
+        int[] example4 = {1, 2, 3, 1, 2, 4};
         System.out.println("Array original: " + Arrays.toString(example4));
         System.out.println(LessonTasks.findUniqueArrayValue(example4));
 
@@ -47,9 +47,17 @@ public class Main {
 
         //Lesson task 6
         System.out.println("Task6:");
+        int[] example6 = new int[5];
+        System.out.println("Filled by random values and sorted: " +
+                Arrays.toString(LessonTasks.fillArrayRandomValues(example6, 0, 200)));
 
 
-
+        //***Lesson task 7
+        //Не закончен
+        System.out.println("Task7:");
+        int[] example7 = {1, 2, 3, 1, 2, 4};
+        System.out.println("Array original: " + Arrays.toString(example7));
+        System.out.println(Arrays.toString(LessonTasks.findKUniqueArrayValue(example7, 2)));
 
 
 
